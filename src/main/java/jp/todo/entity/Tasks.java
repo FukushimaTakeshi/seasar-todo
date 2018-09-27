@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.Table;
 
 /**
  * Tasksエンティティクラス
@@ -16,6 +17,7 @@ import javax.persistence.Lob;
  */
 @Entity
 @Generated(value = {"S2JDBC-Gen 2.4.46", "org.seasar.extension.jdbc.gen.internal.model.EntityModelFactoryImpl"}, date = "2018/09/24 23:34:58")
+@Table(name = "tasks")
 public class Tasks implements Serializable {
 
     private static final long serialVersionUID = 1L;

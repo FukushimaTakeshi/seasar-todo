@@ -4,6 +4,19 @@
 <title>Dolteng Auto Generated</title>
 </head>
 <body>
-<h1>Hello World!</h1>
+
+<c:forEach var="e" items="${tasks}">
+	<tr>
+		<td>
+			${f:h(e.id)}
+		</td>
+		<td>
+			${f:h(e.content)}
+		</td>
+		<td>
+			${f:h(e.status)}
+		</td>
+	</tr>
+</c:forEach>
 </body>
 </html>
